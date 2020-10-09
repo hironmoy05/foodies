@@ -27,18 +27,21 @@
     <!-- LOGO -->
     <div class="header__logo"><span>Taste.</span>it</div>
 
-    <!-- Navigation -->
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Chief</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Menu</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Reservation</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
-      </ul>
-    </nav> <!-- Navigation End -->
+    <div class="menu">
+      <span class="menu__icon">Menu</span>
+      <!-- Navigation -->
+      <nav class="nav" style="display: none;">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Chief</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Menu</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Reservation</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div><!-- Navigation End -->
   </header> <!-- Header End -->
 
   <!-- Main start -->
@@ -46,15 +49,32 @@
 
     <!-- section-hero -->
     <section class="section-hero">
-      <h1 class="section__hero__title">Best Quality<span>Food</span></h1>
-      <p class="section__hero__subTitle">Taste.It Restaurant</p>
+
+      <!-- Carousel -->
+      <div class="carousel">
+        <div class="carousel-item carousel-item-visible">
+          <img src="images/bg_1.jpg" />
+        </div>
+        <div class="carousel-item">
+          <img src="images/bg_2.jpg" />
+        </div>
+
+        <div class="carousel-actions">
+          <button id="carousel-button-prev" aria-label="Previous Slide"></button>
+          <button id="carousel-button-next" aria-label="Next Slide"></button>
+        </div>
+      </div>
+      
+
+      <h1 class="section-hero__title">Best Quality<span>Food</span></h1>
+      <p class="section-hero__subTitle">Taste.It Restaurant</p>
     </section> <!-- section-hero End  -->
 
 
     <!-- section-about -->
     <section class="section-about">
       <form class="appointment__form">
-        <h2 class="heading__primary">Book your table</h2>
+        <h2 class="heading-primary">Book your table</h2>
 
         <!-- FORM -->
         <div class="form__group">
@@ -123,7 +143,7 @@
 
       <!-- About Content -->
       <div class="section-aboutContent">
-        <h2 class="section-heading">Welcome to taste.it</h2>
+        <h2 class="section-heading">Welcome to Taste.it</h2>
         <span class="subHeading">About</span>
 
         <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis commodi, quasi
@@ -158,18 +178,24 @@
 
             <div class="menu__one">
               <img src="./images/breakfast-1.jpg" alt="Beef Roast Source">
-              <div>
+              <div class="menu__items">
+                <h3 class="menu__subheading">Beef Road Source</h3>
                 <p>
                   <span>Meat</span>,
                   <span>Potato</span>,
                   <span>Rice</span>,
                   <span>Tomato</span>
                 </p>
+              </div>
+
+              <div class="menu__price">
+                <p>$29</p>
               </div>
             </div>
             <div class="menu__two">
               <img src="./images/breakfast-2.jpg" alt="Beef Roast Source">
-              <div>
+              <div class="menu__items">
+                <h3 class="menu__subheading">Beef Road Source</h3>
                 <p>
                   <span>Meat</span>,
                   <span>Potato</span>,
@@ -177,16 +203,27 @@
                   <span>Tomato</span>
                 </p>
               </div>
+
+              <div class="menu__price">
+                <p>$29</p>
+              </div>
             </div>
+
+
             <div class="menu__three">
               <img src="./images/breakfast-3.jpg" alt="Beef Roast Source">
-              <div>
+              <div class="menu__items">
+                <h3 class="menu__subheading">Beef Road Source</h3>
                 <p>
                   <span>Meat</span>,
                   <span>Potato</span>,
                   <span>Rice</span>,
                   <span>Tomato</span>
                 </p>
+              </div>
+
+              <div class="menu__price">
+                <p>$29</p>
               </div>
             </div>
           </div>
@@ -197,7 +234,8 @@
 
             <div class="menu__one">
               <img src="./images/lunch-1.jpg" alt="Beef Roast Source">
-              <div>
+              <div class="menu__items">
+                <h3 class="menu__subheading">Beef Road Source</h3>
                 <p>
                   <span>Meat</span>,
                   <span>Potato</span>,
@@ -205,10 +243,17 @@
                   <span>Tomato</span>
                 </p>
               </div>
+
+              <div class="menu__price">
+                <p>$29</p>
+              </div>
             </div>
+
+
             <div class="menu__two">
               <img src="./images/lunch-2.jpg" alt="Beef Roast Source">
-              <div>
+              <div class="menu__items">
+                <h3 class="menu__subheading">Beef Road Source</h3>
                 <p>
                   <span>Meat</span>,
                   <span>Potato</span>,
@@ -216,16 +261,27 @@
                   <span>Tomato</span>
                 </p>
               </div>
+
+              <div class="menu__price">
+                <p>$29</p>
+              </div>
             </div>
+
+
             <div class="menu__three">
               <img src="./images/lunch-3.jpg" alt="Beef Roast Source">
-              <div>
+              <div class="menu__items">
+                <h3 class="menu__subheading">Beef Road Source</h3>
                 <p>
                   <span>Meat</span>,
                   <span>Potato</span>,
                   <span>Rice</span>,
                   <span>Tomato</span>
                 </p>
+              </div>
+
+              <div class="menu__price">
+                <p>$29</p>
               </div>
             </div>
           </div>
@@ -236,7 +292,8 @@
 
             <div class="menu__one">
               <img src="./images/dinner-1.jpg" alt="Beef Roast Source">
-              <div>
+              <div class="menu__items">
+                <h3 class="menu__subheading">Beef Road Source</h3>
                 <p>
                   <span>Meat</span>,
                   <span>Potato</span>,
@@ -244,10 +301,17 @@
                   <span>Tomato</span>
                 </p>
               </div>
+
+              <div class="menu__price">
+                <p>$29</p>
+              </div>
             </div>
+
+
             <div class="menu__two">
               <img src="./images/dinner-2.jpg" alt="Beef Roast Source">
-              <div>
+              <div class="menu__items">
+                <h3 class="menu__subheading">Beef Road Source</h3>
                 <p>
                   <span>Meat</span>,
                   <span>Potato</span>,
@@ -255,16 +319,27 @@
                   <span>Tomato</span>
                 </p>
               </div>
+
+              <div class="menu__price">
+                <p>$29</p>
+              </div>
             </div>
+
+
             <div class="menu__three">
               <img src="./images/dinner-3.jpg" alt="Beef Roast Source">
-              <div>
+              <div class="menu__items">
+                <h3 class="menu__subheading">Beef Road Source</h3>
                 <p>
                   <span>Meat</span>,
                   <span>Potato</span>,
                   <span>Rice</span>,
                   <span>Tomato</span>
                 </p>
+              </div>
+
+              <div class="menu__price">
+                <p>$29</p>
               </div>
             </div>
           </div>
@@ -279,7 +354,8 @@
 
             <div class="menu__one">
               <img src="./images/dessert-1.jpg" alt="Beef Roast Source">
-              <div>
+              <div class="menu__items">
+                <h3 class="menu__subheading">Beef Road Source</h3>
                 <p>
                   <span>Meat</span>,
                   <span>Potato</span>,
@@ -287,10 +363,17 @@
                   <span>Tomato</span>
                 </p>
               </div>
+
+              <div class="menu__price">
+                <p>$29</p>
+              </div>
             </div>
+
+
             <div class="menu__two">
               <img src="./images/dessert-2.jpg" alt="Beef Roast Source">
-              <div>
+              <div class="menu__items">
+                <h3 class="menu__subheading">Beef Road Source</h3>
                 <p>
                   <span>Meat</span>,
                   <span>Potato</span>,
@@ -298,16 +381,27 @@
                   <span>Tomato</span>
                 </p>
               </div>
+
+              <div class="menu__price">
+                <p>$29</p>
+              </div>
             </div>
+
+
             <div class="menu__three">
               <img src="./images/dessert-3.jpg" alt="Beef Roast Source">
-              <div>
+              <div class="menu__items">
+                <h3 class="menu__subheading">Beef Road Source</h3>
                 <p>
                   <span>Meat</span>,
                   <span>Potato</span>,
                   <span>Rice</span>,
                   <span>Tomato</span>
                 </p>
+              </div>
+
+              <div class="menu__price">
+                <p>$29</p>
               </div>
             </div>
           </div>
@@ -318,7 +412,8 @@
 
             <div class="menu__one">
               <img src="./images/wine-1.jpg" alt="Beef Roast Source">
-              <div>
+              <div class="menu__items">
+                <h3 class="menu__subheading">Beef Road Source</h3>
                 <p>
                   <span>Meat</span>,
                   <span>Potato</span>,
@@ -326,27 +421,43 @@
                   <span>Tomato</span>
                 </p>
               </div>
+
+              <div class="menu__price">
+                <p>$29</p>
+              </div>
             </div>
+
+
             <div class="menu__two">
               <img src="./images/wine-2.jpg" alt="Beef Roast Source">
-              <div>
+              <div class="menu__items">
+                <h3 class="menu__subheading">Beef Road Source</h3>
                 <p>
                   <span>Meat</span>,
                   <span>Potato</span>,
                   <span>Rice</span>,
                   <span>Tomato</span>
                 </p>
+              </div>
+
+              <div class="menu__price">
+                <p>$29</p>
               </div>
             </div>
             <div class="menu__three">
               <img src="./images/wine-4.jpg" alt="Beef Roast Source">
-              <div>
+              <div class="menu__items">
+                <h3 class="menu__subheading">Beef Road Source</h3>
                 <p>
                   <span>Meat</span>,
                   <span>Potato</span>,
                   <span>Rice</span>,
                   <span>Tomato</span>
                 </p>
+              </div>
+
+              <div class="menu__price">
+                <p>$29</p>
               </div>
             </div>
           </div>
@@ -357,18 +468,24 @@
 
             <div class="menu__one">
               <img src="./images/drink-1.jpg" alt="Beef Roast Source">
-              <div>
+              <div class="menu__items">
+                <h3 class="menu__subheading">Beef Road Source</h3>
                 <p>
                   <span>Meat</span>,
                   <span>Potato</span>,
                   <span>Rice</span>,
                   <span>Tomato</span>
                 </p>
+              </div>
+
+              <div class="menu__price">
+                <p>$29</p>
               </div>
             </div>
             <div class="menu__two">
               <img src="./images/drink-2.jpg" alt="Beef Roast Source">
-              <div>
+              <div class="menu__items">
+                <h3 class="menu__subheading">Beef Road Source</h3>
                 <p>
                   <span>Meat</span>,
                   <span>Potato</span>,
@@ -376,16 +493,27 @@
                   <span>Tomato</span>
                 </p>
               </div>
+
+              <div class="menu__price">
+                <p>$29</p>
+              </div>
             </div>
+
+
             <div class="menu__three">
               <img src="./images/drink-3.jpg" alt="Beef Roast Source">
-              <div>
+              <div class="menu__items">
+                <h3 class="menu__subheading">Beef Road Source</h3>
                 <p>
                   <span>Meat</span>,
                   <span>Potato</span>,
                   <span>Rice</span>,
                   <span>Tomato</span>
                 </p>
+              </div>
+
+              <div class="menu__price">
+                <p>$29</p>
               </div>
             </div>
           </div>
@@ -424,19 +552,19 @@
       <span class="subHeading">Chef</span>
 
       <div class="chef-card">
-        <img src="./images/chef-1.jpg" alt="Chef 1">
+        <img src="./images/chef-4.jpg" alt="Chef 1">
         <h4 class="chef-card__heading">John Gustavo</h4>
         <p class="chef-card__designation">CEO, Co Founder</p>
         <p class="paragraph">I am an ambitious workaholic, but apart from that, pretty simple person.</p>
       </div>
       <div class="chef-card">
-        <img src="./images/chef-1.jpg" alt="Chef 1">
+        <img src="./images/chef-2.jpg" alt="Chef 1">
         <h4 class="chef-card__heading">John Gustavo</h4>
         <p class="chef-card__designation">CEO, Co Founder</p>
         <p class="paragraph">I am an ambitious workaholic, but apart from that, pretty simple person.</p>
       </div>
       <div class="chef-card">
-        <img src="./images/chef-1.jpg" alt="Chef 1">
+        <img src="./images/chef-3.jpg" alt="Chef 1">
         <h4 class="chef-card__heading">John Gustavo</h4>
         <p class="chef-card__designation">CEO, Co Founder</p>
         <p class="paragraph">I am an ambitious workaholic, but apart from that, pretty simple person.</p>
@@ -460,6 +588,14 @@
       <div class="content">
         <h2 class="section-heading">Perfect Ingredients</h2>
         <span class="subHeading">This is our secrets</span>
+
+        <p class="paragraph">
+          Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind
+          texts.
+          Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+        </p>
+
+        <a href="#" class="btn btn--red">Learn more</a>
       </div>
     </section> <!-- Section Ingredients End -->
 
@@ -471,8 +607,8 @@
 
       <div class="blog-card">
         <img src="./images/image_1.jpg" alt="Restaurant Pic">
-        <a href="#">August 3, 2020</a>
-        <a href="#">Admin</a>
+        <a class="blog-card__date" href="#">August 3, 2020</a>
+        <a class="blog-card__admin" href="#">Admin</a>
         <p class="blog-card__paragraph">Even the all-powerful Pointing has no control about the blind texts</p>
 
         <div class="section-blog__footer">
@@ -483,8 +619,8 @@
 
       <div class="blog-card">
         <img src="./images/image_2.jpg" alt="Restaurant Pic">
-        <a href="#">August 3, 2020</a>
-        <a href="#">Admin</a>
+        <a class="blog-card__date" href="#">August 3, 2020</a>
+        <a class="blog-card__admin" href="#">Admin</a>
         <p class="blog-card__paragraph">Even the all-powerful Pointing has no control about the blind texts</p>
 
         <div class="section-blog__footer">
@@ -494,8 +630,9 @@
       </div>
       <div class="blog-card">
         <img src="./images/image_3.jpg" alt="Restaurant Pic">
-        <a href="#">August 3, 2020</a>
-        <a href="#">Admin</a>
+        <a class="blog-card__date" href="#">August 3, 2020</a>
+        <a class="blog-card__admin" href="#">Admin</a>
+
         <p class="blog-card__paragraph">Even the all-powerful Pointing has no control about the blind texts</p>
 
         <div class="section-blog__footer">
@@ -508,7 +645,7 @@
 
     <!-- Section Reminder -->
     <section class="section-reminder">
-      <h2 class="section-reminder__heading">We Make Delicious Food</h2>
+      <h2 class="section-reminder__heading">We Make Delicious & Nutritious Food</h2>
       <a href="#" class="btn btn--red">Book A Table Now</a>
     </section> <!-- Section Reminder End -->
   </main>

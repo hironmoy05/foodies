@@ -1,9 +1,9 @@
-$mainColor: rgba(98, 0, 255);
+@import "abstract/variables";
 
-h1 {
-  color: $mainColor;
-}
+@import "base/base";
+@import "base/typography";
 
-body {
-  background-color: orange;
-}
+@import "components/carousel";
+@import "components/section-hero";
+
+@import "layout/header";

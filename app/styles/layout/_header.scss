@@ -1,0 +1,17 @@
+.header {
+  background: var(--color-black);
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2em 1em;
+}
+
+.menu {
+  color: var(--color-white);
+
+  &__icon {
+    font-size: 1.1rem;
+    color: var(--color-logo);
+    text-transform: uppercase;
+
+  }
+}

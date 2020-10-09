@@ -1,0 +1,22 @@
+.section-hero {
+  position: relative;
+
+  &__title,
+  &__subTitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+  }
+
+  &__title {
+    width: 80%;
+    top: 46.5%;
+  }
+
+  &__subTitle {
+     top: 40%;
+     width: 305px;
+  }
+}
