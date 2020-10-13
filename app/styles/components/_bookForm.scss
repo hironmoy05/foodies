@@ -1,0 +1,40 @@
+.appointment__form {
+  background: var(--color-secondary);
+  padding: 1.2em;
+}
+
+.heading-primary {
+  padding: .3em 0;
+  margin-left: .4em;
+}
+
+.form__group {
+  padding: .5em;
+  position: relative;
+}
+
+.form__control {
+  padding: 1.2em 1em;
+  background: var(--color-secondary);
+  border: 1px solid rgba(255, 255, 255, .4);
+  width: 100%;
+  border-radius: 2px;
+  color: var(--color-white);
+}
+
+.form__control::placeholder {
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  option {
+    background-color: var(--color-secondary);
+  }
+}
+
+.icon {
+  position: absolute;
+  right: 1em;
+  top: 1.5em;
+  color: rgba(255, 255, 255, .7);
+}

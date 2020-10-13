@@ -1,0 +1,13 @@
+.section-aboutContent {
+  padding: 3em 1em;
+  display: grid;
+
+  .subHeading {
+    order: -1;
+    margin-bottom: -.5em;
+  }
+
+  .paragraph {
+    margin-top: 1.5em;
+  }
+}
