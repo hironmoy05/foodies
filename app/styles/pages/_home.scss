@@ -11,3 +11,35 @@
     margin-top: 1.5em;
   }
 }
+
+.section-showcase {
+  background: url("../images/bg_3.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  padding: 8em 0;
+  position: relative;
+
+  &__content {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+    & .section-heading,
+    & .paragraph {
+      font-size: 2rem;
+      color: var(--color-white);
+      position: relative;
+      z-index: 2;
+      text-transform: capitalize;
+    }
+    
+    & .paragraph {
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      order: -1;
+    }
+  }
+}
