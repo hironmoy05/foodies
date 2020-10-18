@@ -1,0 +1,59 @@
+.chef-card {
+  background-color: var(--color-white);
+  text-align: left;
+  position: relative;
+  margin: .5em 0;
+
+  &__image {
+    height: 23rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    &-1 {
+      background-image: url(../images/chef-4.jpg);
+    }
+    &-2 {
+      background-image: url(../images/chef-2.jpg);
+    }
+    &-3 {
+      background-image: url(../images/chef-3.jpg);
+    }
+    &-4 {
+      background-image: url(../images/chef-1.jpg);
+    }
+  }
+
+  &__content {
+     margin: .5em 1.5em 2.5em 1.5em;
+  }
+
+  &__designation {
+    margin-bottom: 1.1em;
+  }
+
+  &__paragraph {
+    line-height: 2.3;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    width: 2.5em;
+    height: 1em;
+    margin: 0 1.5em;
+    background: var(--color-secondary);
+    position: absolute;
+    top: 100%;
+    z-index: -1;
+  }
+
+  &::before {
+    transform: skewY(-20deg);
+  }
+
+  &::after {
+    transform: skewY(20deg);
+  }
+
+
+}
