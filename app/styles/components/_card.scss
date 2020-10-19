@@ -54,6 +54,28 @@
   &::after {
     transform: skewY(20deg);
   }
+}
 
+.blog-card {
+  margin-bottom: 2em;
+  padding: 0 0 3.5em;
+  background-color: var(--color-white);
+  position: relative;
 
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 90%;
+    height: 1em;
+    background-color: #f0f0f0;
+    position: absolute;
+    bottom: -.35em;
+    left: 1.3em;
+    z-index: -1;
+  }
+
+}
+
+.blog-card:hover::after {
+  background-color: var(--color-secondary);
 }
