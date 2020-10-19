@@ -1,16 +1,24 @@
 .btn {
   &:link,
   &:visited {
-    padding: 1em 3em;
     display: inline-block;
-    width: 100%;
     text-align: center;
     text-decoration: none;
-    color: var(--color-black);
     border-radius: 2px;
   }
-
+  
   &--white {
     background: var(--color-white);
+    padding: 1em 3em;
+    color: var(--color-black);
+    width: 100%;
+  }
+
+  &--red {
+    background: var(--color-secondary);
+    justify-self: left;
+    padding: .5em 1em;
+    color: var(--color-white);
+    margin-top: 1em ;
   }
 }

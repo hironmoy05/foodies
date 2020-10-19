@@ -94,3 +94,42 @@
     margin-bottom: 3em;
   }
 }
+
+.section-ingredients {
+  margin: 0 1em 3em;
+  max-width: 100%;
+}
+
+.ingredients__image {
+  display: flex;
+  justify-content: center;
+
+  &-1,
+  &-2 {
+    height: 700px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-width: 50%;
+  }
+  
+  &-1 {
+    background-image: url(../images/bg_6.jpg);
+  }
+  
+  &-2 {
+    background-image: url(../images/bg_4.jpg);
+  }
+
+}
+
+.ingredients__content {
+  margin: 2em 0;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  & .subHeading {
+    order: -1;
+    margin-bottom: -.5em;
+  }
+}
