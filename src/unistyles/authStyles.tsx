@@ -71,7 +71,7 @@ export const loginStyles = createStyleSheet(({ colors, device, border }) => ({
     breakerText: {
         opacity: 0.8,
         backgroundColor: colors.background,
-        paddingHorizontal: 10
+        paddingHorizontal: 10,
     },
     buttonContainer: {
         backgroundColor: colors.primary,

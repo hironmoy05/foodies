@@ -1,9 +1,11 @@
 {
     "cSpell.words": [
         "Ionicons",
+        "Pressable",
         "Proguard",
         "Timout",
         "unistyles"
     ],
-    "java.configuration.updateBuildConfiguration": "automatic"
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.compile.nullAnalysis.mode": "automatic"
 }
